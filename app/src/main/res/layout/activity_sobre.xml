@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SobreActivity">
+
+    <ImageView
+        android:id="@+id/imageCreator"
+        android:layout_width="170dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="image of the app creator"
+        android:cropToPadding="false"
+        android:drawingCacheQuality="auto"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_creator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSobreTitle"
+        app:srcCompat="@drawable/image_creator"
+        tools:srcCompat="@drawable/image_creator"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textSobreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:text="Disciplina de Dispositivos Moveis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textContadorSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textSobreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="101dp"
+        android:text="Roger Henrique Rodrigues Correa"
+        app:layout_constraintBottom_toTopOf="@+id/textContadorSobre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCreator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
